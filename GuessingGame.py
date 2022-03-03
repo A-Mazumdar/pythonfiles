@@ -15,6 +15,10 @@ while(True):
         print("")
         continue
 
+    if guess < 1 or guess > UpperLimit:
+        print("Out of Range!")
+        continue
+    
     if guess is x:
         print("you guessed it!")
         break
